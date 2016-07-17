@@ -1,0 +1,6 @@
+com/crunchify/controller/TestController.class
+com/crunchify/model/Greeting.class
+com/crunchify/model/TestCheckbox.class
+com/crunchify/rest/UserRestController.class
+com/crunchify/controller/CrunchifyHelloWorld.class
+com/crunchify/model/LoginBean.class
