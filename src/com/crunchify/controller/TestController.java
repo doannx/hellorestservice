@@ -16,7 +16,6 @@ import org.springframework.web.context.request.WebRequest;
 import com.crunchify.model.LoginBean;
 import com.crunchify.model.TestCheckbox;
 
-@RequestMapping("InstallationEquipmentDetail")
 @Controller
 public class TestController {
     public String testSingleton = "Kimmy";

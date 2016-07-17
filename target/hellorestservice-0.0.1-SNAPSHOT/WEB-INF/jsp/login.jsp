@@ -8,9 +8,7 @@
 <title>${testBean.name }</title>
 </head>
 <body>
-	<form
-		action="/CrunchifySpringMVCTutorial/InstallationEquipmentDetail/testform"
-		method="POST">
+	<form action="testform" method="POST">
 		<table border="1" cellpadding="1" cellspacing="1" align="center">
 			<tr>
 				<td>Name</td>
@@ -29,7 +27,7 @@
 				<td colspan=2><input type="submit" value="Fuck" /></td>
 			</tr>
 			<tr>
-				<td colspan=2><a href="/greeting">Call REST</a></td>
+				<td colspan=2><a href="greeting">Call REST</a></td>
 			</tr>
 		</table>
 	</form>
