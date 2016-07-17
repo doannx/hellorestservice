@@ -29,6 +29,9 @@
 			<tr>
 				<td colspan=2><a href="greeting">Call REST</a></td>
 			</tr>
+			<tr>
+				<td colspan=2><a href="dosomething">Do Something</a></td>
+			</tr>
 		</table>
 	</form>
 </body>

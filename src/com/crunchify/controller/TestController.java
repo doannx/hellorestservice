@@ -11,15 +11,16 @@ import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.context.request.WebRequest;
 
 import com.crunchify.model.LoginBean;
 import com.crunchify.model.TestCheckbox;
 
 @Controller
+@SessionAttributes("loginForm")
 public class TestController {
     public String testSingleton = "Kimmy";
-    
 
     @InitBinder
     public void bindingPreparation(WebDataBinder binder) {
@@ -37,11 +38,12 @@ public class TestController {
     }
 
     @RequestMapping(value = "/testform", method = RequestMethod.POST)
-    public String displayLogin(LoginBean bean) {
+    @ModelAttribute("loginForm")
+    public LoginBean displayLogin(LoginBean bean) {
         System.out.println("First:" + this.testSingleton);
         System.out.println(bean.getName());
         this.testSingleton = bean.getName();
         System.out.println("Second:" + this.testSingleton);
-        return "login";
+        return bean;
     }
 }
